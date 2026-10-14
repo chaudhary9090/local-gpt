@@ -58,11 +58,11 @@ No API keys are required. All embeddings, vector storage, and language model inf
 
 ```mermaid
 flowchart TD
-    User([User]) -->|Uploads Documents / Asks Questions| WebUI["Web Interface (http://127.0.0.1:8145)"]
+    User["User"] -->|"Uploads Documents & Queries"| WebUI["Web Interface (Port 8145)"]
     
     subgraph Frontend ["Frontend Layer"]
         InputCard["Prompt Box + Document / Folder Upload"]
-        QuickPills["Quick Suggestion Pills (Summary, Obligations, Terms)"]
+        QuickPills["Quick Suggestion Pills"]
         StreamChat["Real-time Streaming Chat Thread"]
         Citations["Referenced Documents Drawer"]
         LibraryView["Document Library Manager"]
@@ -70,18 +70,18 @@ flowchart TD
     
     WebUI --> Frontend
     
-    subgraph Backend ["FastAPI Engine (Port 8145)"]
+    subgraph Backend ["FastAPI Engine"]
         UploadAPI["/api/upload: Multi-file Ingestion"]
         Splitter["RecursiveCharacterTextSplitter (1000 / 150)"]
         Embedder["Local ONNX Embeddings (all-MiniLM-L6-v2)"]
-        VectorDB[("ChromaDB Persistent Store (./data/chroma_db)")]
+        VectorDB[("ChromaDB Persistent Store")]
         ChatAPI["/api/chat: Vector Retrieval & Streaming"]
     end
     
     Frontend --> Backend
     UploadAPI --> Splitter --> Embedder --> VectorDB
-    ChatAPI -->|Similarity Search (k=4)| VectorDB
-    ChatAPI -->|Strict Anti-Hallucination Prompt| Ollama["Local Ollama SLM (http://localhost:11434)"]
+    ChatAPI -->|"Semantic Vector Search"| VectorDB
+    ChatAPI -->|"Strict Anti-Hallucination Prompt"| Ollama["Local Ollama SLM"]
 ```
 
 ---
