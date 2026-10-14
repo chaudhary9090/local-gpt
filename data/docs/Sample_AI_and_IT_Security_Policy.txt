@@ -1,0 +1,29 @@
+ENTERPRISE INFORMATION SECURITY & LOCAL AI POLICY
+
+Document Reference: SEC-POL-2026-v4
+Effective Date: October 2026
+Owner: Inno, Enterprise Administration Team
+
+1. Objective & Scope
+This policy defines the acceptable use, data confidentiality standards, and retrieval-augmented generation (RAG) governance for on-premises small language models (SLMs) and corporate document systems.
+
+2. On-Premises & Local Data Privacy Standards
+2.1 All confidential corporate documents, customer contracts, and employee records must be processed strictly within on-premises or private local instances.
+2.2 Vector embeddings must be stored in encrypted local vector databases (ChromaDB / SQLite Vector) without transmitting raw chunk embeddings to unapproved external endpoints.
+2.3 The system utilizes local inference engines (Ollama SLMs) guaranteeing 100% data residency and zero internet telemetry for proprietary documents.
+
+3. Document Chunking & Ingestion Standards
+3.1 Text splitting parameter defaults must be configured with a chunk size of 1000 characters and an overlap of 150 characters to prevent loss of context across semantic boundaries.
+3.2 Documents accepted include PDF, DOCX, TXT, Markdown, and CSV formats.
+3.3 Parsing must preserve section hierarchies, clause numbers, and metadata tags (source filename, page number, timestamp).
+
+4. Anti-Hallucination & Retrieval Guardrails
+4.1 The RAG prompt must enforce strict adherence to retrieved context:
+    "Answer ONLY using the provided context. If the answer is not found in the context, say: 'I couldn't find that information in the document.'"
+4.2 When context confidence is low or when no matching chunks exceed the similarity threshold, the model must explicitly notify the user rather than inferring facts.
+
+5. Approval, Disapproval, and Human Review Escalation
+5.1 Agreements analyzed by the SLM are scored across three categories:
+    - APP (Approved): Standard clauses conforming to standard liability caps, mutual indemnities, and balanced termination rights.
+    - DIS (Disapproved): High-risk clauses containing uncapped liabilities, unilateral broad indemnities, or punitive non-cancellation terms.
+    - REVIEW (Human Review): Ambiguous terms, modified cure periods, or non-standard governing laws requiring attorney escalation.

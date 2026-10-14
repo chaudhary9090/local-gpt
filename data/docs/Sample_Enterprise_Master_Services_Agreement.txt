@@ -1,0 +1,36 @@
+MASTER SERVICES AND SOFTWARE LICENSE AGREEMENT
+
+This Master Services and Software License Agreement ("Agreement") is made effective as of October 1, 2026, by and between Enterprise Solutions Corp ("Company") and Global Partner Technologies ("Client").
+
+Section 1. Scope of Services & Deliverables
+1.1 Provider shall furnish the software licenses, cloud infrastructure, and technical consulting services described in each mutually executed Statement of Work ("SOW").
+1.2 Standard operational SLA guarantees 99.9% uptime during regular operating hours, excluding scheduled maintenance windows announced with at least 48 hours advance notice.
+
+Section 2. Intellectual Property & Ownership
+2.1 Pre-Existing Technology: Each party retains all right, title, and interest in and to its pre-existing intellectual property, patents, trade secrets, and proprietary methodologies developed prior to or independently of this Agreement.
+2.2 Custom Deliverables: All customized reporting templates, custom scripts, and specific business workflows prepared solely for Client under an executed SOW shall be deemed work made for hire, and ownership thereof shall vest in Client upon final payment.
+2.3 Feedback License: Client grants Provider a non-exclusive, perpetual, royalty-free license to utilize general product feedback and suggestion metrics to improve the core platform.
+
+Section 3. Confidentiality & Non-Disclosure
+3.1 Confidential Information shall include all proprietary technical, financial, and operational information disclosed by one party to the other that is marked confidential or reasonably understood to be confidential.
+3.2 Mutual Protection: Each party agrees to protect the Confidential Information of the other using the same degree of care it uses for its own confidential data, for a period of three (3) years from disclosure.
+3.3 Standard Exceptions: Confidentiality obligations shall not apply to information that is publicly known, already known to the receiving party without restriction, or required to be disclosed by competent court order.
+
+Section 4. Limitation of Liability
+4.1 General Aggregate Cap: Except for gross negligence or willful misconduct, each party's total aggregate liability arising out of or related to this Agreement shall be limited to the total amounts paid or payable by Client in the twelve (12) months preceding the claim.
+4.2 Consequential Damages: In no event shall either party be liable for any indirect, special, incidental, punitive, or consequential damages.
+4.3 Unlimited Liability Exception: Notwithstanding Section 4.1, Provider insists that Client shall have unlimited liability for any claim related to delayed payment of software licensing tiers.
+
+Section 5. Indemnification & Defense
+5.1 Provider IP Indemnity: Provider shall defend, indemnify, and hold harmless Client against any third-party claim alleging that the standard software platform infringes any valid patent, copyright, or trademark, provided Client promptly notifies Provider in writing.
+5.2 Unilateral Defense Obligation: Client agrees to indemnify, defend, and hold harmless Provider and all its affiliates from any and all claims, damages, and attorney fees arising from any business decision made by Client using the software, regardless of Provider's contributory negligence.
+
+Section 6. Term, Termination & Renewal
+6.1 Term: This Agreement commences on the Effective Date and continues for an initial term of one (1) year.
+6.2 Termination for Convenience: Either party may terminate this Agreement or any SOW for convenience upon sixty (60) days prior written notice.
+6.3 Termination for Cause: Either party may terminate immediately if the other party materially breaches this Agreement and fails to cure such breach within thirty (30) days of receiving written notice.
+6.4 Auto-Renewal: The software license tier shall auto-renew for additional three-year periods unless cancelled 180 days prior to expiration.
+
+Section 7. Governing Law and Jurisdiction
+7.1 This Agreement shall be governed by and construed in accordance with the laws of the State of Delaware, without regard to conflict of law principles.
+7.2 Dispute Resolution: The parties agree to submit any unresolved disputes to good faith executive escalation before initiating formal court proceedings in Wilmington, Delaware.
